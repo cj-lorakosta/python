@@ -82,5 +82,4 @@ plane.move()  # Output: Flying ✈️
 boat = Boat()
 boat.move()  # Output: Sailing ⛵
 
-dog
 
