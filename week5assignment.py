@@ -1,3 +1,5 @@
+
+Question 1
 # Base class
 class Superhero:
     def __init__(self, name, power, city):
@@ -36,3 +38,49 @@ hero2 = FlyingHero("SkyFlare", "Fire Flight", "Skyhaven", 800)
 hero2.set_secret_identity("Ava Blaze")
 hero2.display_info()
 print(hero2.get_secret_identity())
+
+Question 2
+
+# Base class for moveable objects
+class Moveable:
+    def move(self):
+        raise NotImplementedError("Subclass must implement abstract method")
+
+# Vehicle classes
+class Car(Moveable):
+    def move(self):
+        print("Driving 🚗")
+
+class Plane(Moveable):
+    def move(self):
+        print("Flying ✈️")
+
+class Boat(Moveable):
+    def move(self):
+        print("Sailing ⛵")
+
+# Animal classes
+class Dog(Moveable):
+    def move(self):
+        print("Running 🐕")
+
+class Bird(Moveable):
+    def move(self):
+        print("Flying 🦅")
+
+class Fish(Moveable):
+    def move(self):
+        print("Swimming 🐟")
+
+# Create instances of each class and call move()
+car = Car()
+car.move()  # Output: Driving 🚗
+
+plane = Plane()
+plane.move()  # Output: Flying ✈️
+
+boat = Boat()
+boat.move()  # Output: Sailing ⛵
+
+dog
+
